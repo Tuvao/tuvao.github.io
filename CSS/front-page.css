@@ -1,0 +1,22 @@
+.conceptSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page .imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+}
+
+.front-page .imageContainer img{
+    object-fit: cover;
+    width: 80%;
+}
+
+.front-page .textContainer{
+    width: 30em;
+}

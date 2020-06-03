@@ -1,0 +1,162 @@
+.contentBox{
+    margin-left: 15em;
+}
+
+.section{
+    height: 100vh;
+    border-top: 2px dashed black;
+    padding: 1em;
+    position: relative;
+}   
+.section:nth-child(even){
+    background-color: #fcfcfc
+}
+.section:first-child{
+    border-top: none;
+    padding-top: none;
+    display: block;
+}
+.innerSection, .actual-concept, .project-outcomes, .technical-details, .design-process{
+ /*  height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-outcomes .inner{
+  width: 80%;
+}
+/* .project-outcomes p{
+  display: block;
+  width: 60%;
+}
+.project-outcomes p:nth-child(even){
+  float: left;
+}
+.project-outcomes p:nth-child(odd){
+  float: right;
+  text-align: right;
+} */
+
+.outcomeSection{
+  display: flex;
+  justify-content: start;
+  margin-top: 2em;
+  align-items: center;
+}
+.outcomeSection p{
+  width: 70%; 
+}
+
+.concept{
+    height: 200vh;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30em;
+}
+
+.textContainer{
+  max-width: 25em;
+  overflow-y: auto;
+  max-height: 80%;
+}
+.imageContainer img{
+  width: 60%;
+  object-fit: cover;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1em;
+  top: 48vh;
+}
+
+
+
+/* FOllowing sections are copied code from https://www.w3schools.com/howto/howto_js_tabs.asp
+        The author is unknown. Accessed 01.06.20
+        The base is used, styling options are modified*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-top:1em;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 5px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    text-decoration: underline;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  /* End of copied code */
+
+  .tablink{
+    height:2em;
+    padding: 1.5em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrowIcon{
+    width: 1em;
+    height: 1em;
+  }
+  .tablink:hover{
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+  }
+  .hidden{
+    display:none;
+  }
+
+  .iconBox{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .outcomeIcon{
+    margin-left: 1em;
+    height: 3em;
+    width: 3em;
+  }

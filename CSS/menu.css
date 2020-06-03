@@ -1,0 +1,57 @@
+/* Following code copied (and slightly modified) from https://codepen.io/thetypebeast/pen/KWNGGd, 
+    accessed 31.05.20, author Jennifer */
+    
+    .navbarBox::before { /* Modified to navbar */
+        content:""; /* required for ::before */
+        position:fixed; /* don't scroll with page */
+        z-index:-100; /* place behind elements on page */
+        width:15em;
+        height:100%; /* Modified by Tuva from 100 to 10 */
+        background-color:#14C2CC;
+        background-image: 
+        radial-gradient(circle farthest-side at top right, transparent, #0D64FF), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #FF00A0);
+        animation:bg-change 10s infinite;
+    }
+    
+    @keyframes bg-change {
+        0%, 100% {
+            filter:hue-rotate(0deg);
+        }
+        50% {
+            filter:hue-rotate(-45deg);
+        }
+    }
+    
+    /* End of copied code */
+    
+    .navbarBox{
+        position: fixed;
+        width:15em;
+        height:100%; 
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbarBox ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbarBox ul li{
+        margin-top: 0.5em;
+    }
+    .navbarLink{
+        color: black;
+        font-size: 1.2em;
+    }
+    .navbarLink:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu li.active a{
+        /* border-top: 3px solid #333; */
+        color: white;
+    }

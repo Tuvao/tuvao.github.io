@@ -1,0 +1,8 @@
+@media screen and (min-width: 1500px){
+    .navbarBox::before, .navbarBox{
+        width: 20em;
+    }
+    .contentBox{
+        margin-left: 20em;
+    }
+}
