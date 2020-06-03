@@ -68,6 +68,9 @@
   width: 60%;
   object-fit: cover;
 }
+.design-process .imageContainer img{
+  width: 80%;
+}
 
 .buttonContainer{
   display: flex;
